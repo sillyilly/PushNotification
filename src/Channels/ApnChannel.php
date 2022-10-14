@@ -26,11 +26,7 @@ class ApnChannel extends PushChannel
                     'body' => $message->body,
                 ],
                 'category' => $message->category,
-                'sound' => $message->sound,
-                'headers' => [
-    '               apns-push-type' => 'alert'
-]
-                ],
+                'sound' => $message->sound
         ];
 
         if (! empty($message->extra)) {
